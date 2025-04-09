@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Validations</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <form action="/enviar" method="post">
+            <!-- nome -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <!-- email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <!-- senha com restrição -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="6" required>
+            <br><br>
+
+            <!-- Idade com min e max -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="99" required>
+            <br><br>
+
+            <!-- Gênero usando rádio -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="Gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="Gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="Gender" value="other">
+            <label for="other">Other</label><br>
+
+            <!-- País com select -->
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+            </select>
+            <br><br>
+
+            <!-- Áreas de interesse com checkbox -->
+            <label>Interests:</label><br>
+            <input type="checkbox" id="HTML" name="interests" value="HTML">
+            <label for="HTML">HTML</label><br>
+            <input type="checkbox" id="CSS" name="interests" value="CSS">
+            <label for="CSS">CSS</label><br>
+            <input type="checkbox" id="JavaScript" name="interests" value="JavaScript">
+            <label for="JavaScript">JavaScript</label>
+            <br><br>
+            
+            <!-- Mensagem com textarea -->
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..." required></textarea>
+            <br><br>
+
+            <!-- Botão de Enviar -->
+            <button type="submit">Submit</button>
+
+        </form>
+
+
+
+
+    </body>
+</html>
