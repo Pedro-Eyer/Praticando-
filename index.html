@@ -4,76 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms and Validations</title>
+    <meta name="description"
+        content="Register using this accessible and user-friendly form. Includes validation for name, email, password, and more.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Form, Registration, Accessible">
+    <title>User Registration Form | Frontend Practice</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <main>
-        <form action="/enviar" method="post" aria-label="User registration form">
-            <!-- nome -->
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required aria-required="true">
-            <br><br>
+        <h1>User Registration Form</h1>
+        <form action="/submit-form" method="post" aria-label="User registration form">
 
-            <!-- email -->
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required aria-required="true">
-            <br><br>
+            <!-- Informações Pessoais -->
+            <section>
+                <h2>Personal Information</h2>
 
-            <!-- senha com restrição -->
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" minlength="6" required aria-describedby="passwordHelp"
-                aria-required="true">
-            <small id="passwordHelp">Password must be at least 6 characters long.</small>
-            <br><br>
+                <!-- nome -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+                <br><br>
 
-            <!-- Idade com min e max -->
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="18" max="99" required aria-required="true">
-            <br><br>
+                <!-- email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                <br><br>
 
-            <!-- Gênero usando rádio -->
-            <fieldset>
-                <legend>Gender:</legend><br>
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label><br>
-            </fieldset>
+                <!-- senha com restrição -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="6" required
+                    aria-describedby="passwordHelp" aria-required="true">
+                <small id="passwordHelp">Password must be at least 6 characters long.</small>
+                <br><br>
 
-            <!-- País com select -->
-            <label for="country">Country:</label>
-            <select id="country" name="country" required aria-required="true">
-                <option value="" disabled selected>Select your country</option>
-                <option value="Brazil">Brazil</option>
-                <option value="USA">USA</option>
-                <option value="Canada">Canada</option>
-                <option value="UK">UK</option>
-                <option value="Australia">Australia</option>
-                <option value="Other">Other</option>
-            </select>
-            <br><br>
+                <!-- Idade com min e max -->
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="99" required aria-required="true">
+                <br><br>
 
-            <!-- Áreas de interesse com checkbox -->
-            <fieldset>
-                <legend>Interests:</legend><br>
-                <input type="checkbox" id="HTML" name="interests" value="HTML">
-                <label for="HTML">HTML</label><br>
-                <input type="checkbox" id="CSS" name="interests" value="CSS">
-                <label for="CSS">CSS</label><br>
-                <input type="checkbox" id="JavaScript" name="interests" value="JavaScript">
-                <label for="JavaScript">JavaScript</label>
-            </fieldset>
-            <br><br>
+            </section>
 
-            <!-- Mensagem com textarea -->
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..." required
-                aria-required="true"></textarea>
-            <br><br>
+            <!-- Informações Adicionais -->
+            <section>
+                <h2>Additional Information</h2>
+
+                <!-- Gênero usando rádio -->
+                <fieldset>
+                    <legend>Gender:</legend><br>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br>
+                </fieldset>
+
+                <!-- País com select -->
+                <label for="country">Country:</label>
+                <select id="country" name="country" required aria-required="true">
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br><br>
+
+                <!-- Áreas de interesse com checkbox -->
+                <fieldset>
+                    <legend>Interests:</legend><br>
+                    <input type="checkbox" id="HTML" name="interests" value="HTML">
+                    <label for="HTML">HTML</label><br>
+                    <input type="checkbox" id="CSS" name="interests" value="CSS">
+                    <label for="CSS">CSS</label><br>
+                    <input type="checkbox" id="JavaScript" name="interests" value="JavaScript">
+                    <label for="JavaScript">JavaScript</label>
+                </fieldset>
+                <br><br>
+
+            </section>
+
+            <!-- Mensagem -->
+            <section>
+                <h2>Message</h2>
+
+                <!-- Mensagem com textarea -->
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here..."
+                    required aria-required="true"></textarea>
+                <br><br>
+            </section>
+
             <!-- Botão de Enviar -->
             <button type="submit">Submit</button>
 
