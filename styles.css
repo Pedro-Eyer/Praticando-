@@ -68,6 +68,17 @@
     margin-right: 8px;
   }
   
+  .form-section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+    .form-section h2 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        color: #333;
+    }
 @media (max-width: 600px) {
     body {
         padding: 20px;
