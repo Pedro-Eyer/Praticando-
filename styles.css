@@ -1,0 +1,90 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Estilo geral do formulário */
+  form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  /* Labels */
+  form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Inputs, selects e textarea */
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  /* Botão de envio */
+  form button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efeito hover no botão */
+  form button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Espaçamento para radio e checkbox */
+  form input[type="radio"],
+  form input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+  }
+  
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+    form {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        font-size: 16px;
+    }
+     form button {
+        font-size: 18px;
+        width: 100%;
+        padding: 15px;
+     }
+}
