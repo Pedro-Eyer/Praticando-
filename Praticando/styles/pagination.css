@@ -1,15 +1,4 @@
-<button class="back-btn">BACK</button>
-
-<a class="page1" href="index.html">1</a>
-<a class="page2" href="index.html">2</a>
-<a class="page3" href="index.html">3</a>
-<a class="page4" href="index.html">4</a>
-<a class="page5" href="index.html">5</a>
-
-<button class="next-btn">NEXT</button>
-
-<style>
-   .back-btn {
+.back-btn {
     padding-top: 8px;
     padding-bottom: 8px;
     margin-right: 8px;
@@ -27,4 +16,3 @@
      padding-left: 5px;
      padding-right: 5px;
     }
-</style>

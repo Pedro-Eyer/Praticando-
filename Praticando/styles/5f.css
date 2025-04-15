@@ -1,0 +1,19 @@
+p {
+    font-family: arial;
+    color: gray;
+}
+.price {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+.today {
+    font-size: 18px;
+    color: #5A8963;
+    margin-top: 0;
+}
+.sla {
+    color: red;
+    font-size: 18px;
+}
