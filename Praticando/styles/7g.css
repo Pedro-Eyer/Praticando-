@@ -1,0 +1,23 @@
+.cat {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    vertical-align: middle;
+    object-fit: cover;
+    margin-right: 5px;
+}
+.placeholder {
+    border: none;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 60px;
+}
+.button {
+    background-color:#4B93D4;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 8px 16px;
+    vertical-align: middle;
+}

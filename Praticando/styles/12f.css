@@ -1,0 +1,43 @@
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #6D529E;
+    height: 70px;
+    align-items: center;
+    border: none;
+
+}
+.left-section {
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+
+}
+.text-box{
+    width: 500px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    
+
+}
+
+.download-button {
+    background-color: #6D529E;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-right: 10px;
+}

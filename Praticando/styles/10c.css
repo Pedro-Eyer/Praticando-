@@ -1,0 +1,10 @@
+.video-preview {
+    display: flex;
+}
+.pic {
+    width: 400px;
+    height: 250px;
+}
+.info-video {
+    margin-left: 10px;
+}

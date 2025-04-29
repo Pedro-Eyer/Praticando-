@@ -1,0 +1,12 @@
+p {
+    font-family: arial;
+}
+.container {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-radius: 1px;
+    width: 300px;
+    padding-bottom: 20px;
+    padding-left:  15px;
+}
