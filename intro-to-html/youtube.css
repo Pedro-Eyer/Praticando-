@@ -4,9 +4,11 @@ body {
     padding-left: 90px;
     padding-right: 20px;
 }
+
 .header {
     height: 55px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     position: fixed;
@@ -19,11 +21,13 @@ body {
     border-bottom-color: rgb(234, 234, 234);
     z-index: 100;
 }
-.left-section { 
+
+.left-section {
     align-items: center;
     display: flex;
     margin-left: 20px;
 }
+
 .middle-section {
     flex: 1;
     margin-left: 70px;
@@ -32,19 +36,22 @@ body {
     display: flex;
     align-items: center;
 }
+
 .right-section {
     width: 180px;
     display: flex;
     align-items: center;
     margin-right: 20px;
     justify-content: space-between;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
+
 p {
     font-family: Roboto, Arial;
     margin-top: 0;
     margin-bottom: 0;
 }
+
 .video-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -52,14 +59,17 @@ p {
     row-gap: 40px;
 }
 
-.thumbnail { 
-    width: 100%; 
+
+
+.thumbnail {
+    width: 100%;
 }
 
 .video-info-grid {
     display: grid;
     grid-template-columns: 50px 1fr;
 }
+
 .video-title {
     margin-top: 0;
     margin-bottom: 12px;
@@ -74,14 +84,17 @@ p {
     color: rgb(96, 96, 96);
     margin-bottom: 10px;
 }
+
 .video-author {
     margin-bottom: 4px;
 
 }
-.thumbnail-row{
+
+.thumbnail-row {
     margin-bottom: 10px;
     position: relative;
 }
+
 .video-time {
     font-family: Roboto, Arial;
     font-weight: 500;
@@ -92,7 +105,7 @@ p {
     bottom: 10px;
     right: 10px;
     border-radius: 2px;
-    
+
 }
 
 .profile-picture {
@@ -107,9 +120,11 @@ p {
     margin-right: 24px;
     margin-left: 24 px;
 }
+
 .logo {
     height: 24px;
 }
+
 .search-bar {
     flex: 1;
     height: 36px;
@@ -121,17 +136,20 @@ p {
     border-style: solid;
     border-color: rgb(192, 192, 192);
     border-radius: 2px;
-    box-shadow:  0px 1px 2px rgb(238, 238, 238);
-    
+    box-shadow: 0px 1px 2px rgb(238, 238, 238);
+
 }
+
 .search-bar::placeholder {
     font-family: Roboto, Arial;
     font-size: 16px;
 }
+
 .search-icon {
     height: 24px;
     width: 24px;
 }
+
 .search-button {
     height: 40px;
     width: 66px;
@@ -144,6 +162,7 @@ p {
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 }
+
 .search-button,
 .voice-search-button,
 .upload-icon-container,
@@ -154,6 +173,7 @@ p {
     justify-content: center;
     align-items: center;
 }
+
 .search-button .tooltip,
 .voice-search-button .tooltip,
 .upload-icon-container .tooltip,
@@ -172,6 +192,7 @@ p {
     pointer-events: none;
     white-space: nowrap;
 }
+
 .search-button:hover .tooltip,
 .voice-search-button:hover .tooltip,
 .upload-icon-container:hover .tooltip,
@@ -179,10 +200,12 @@ p {
 .notifications:hover .tooltip {
     opacity: 1;
 }
+
 .voice-search-icon {
     height: 24px;
-   
+
 }
+
 .voice-search-button {
     cursor: pointer;
     height: 40px;
@@ -193,21 +216,26 @@ p {
     margin-left: 10px;
 
 }
+
 .upload-icon {
     height: 24px;
     margin-right: 10px;
 }
-.apps-icon{
+
+.apps-icon {
     height: 24px;
     margin-right: 10px;
 }
+
 .notification-icon {
     height: 24px;
     margin-right: 10px;
 }
+
 .notifications-icons-container {
     position: relative;
 }
+
 .notifications-count {
     position: absolute;
     top: -4px;
@@ -223,7 +251,8 @@ p {
     border-radius: 10px;
 
 }
-.profile-icon{
+
+.profile-icon {
     height: 32px;
     width: 32px;
     margin-right: 10px;
@@ -231,8 +260,9 @@ p {
     object-fit: cover;
     object-position: center;
 }
- /* side bar */
- .side-bar {
+
+/* side bar */
+.side-bar {
     position: fixed;
     top: 55px;
     left: 0;
@@ -244,32 +274,168 @@ p {
     border-right-color: rgb(234, 234, 234);
     padding-top: 20px;
     z-index: 100;
- }
- .side-bar-icon {
+}
+
+.side-bar-icon {
     height: 24px;
     margin-left: 24px;
     margin-right: 24px;
- }
- .sidebar-text {
+}
+
+.sidebar-text {
     font-size: 10px;
     align-items: center;
     font-family: Roboto, Arial;
     margin-top: 5px;
 
- }
- .side-bar-item {
+}
+
+.side-bar-item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-top: 10px;
     padding-bottom: 10px;
-    flex: 1 ;
+    flex: 1;
     height: 60px;
 
- }
- .side-bar-item:hover {
+}
+
+.side-bar-item:hover {
     background-color: lightgray;
     cursor: pointer;
- }
- 
+}
+
+/* resposividade */
+@media (max-width: 501px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .side-bar {
+        display: none;
+    }
+
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }  
+    .search-bar {
+        display: none;
+        transition: width 0.3s ease;
+    }
+    .search-button {
+        width: auto;
+    }
+    .right-section {
+        white-space: nowrap;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
+
+@media (min-width: 502px) and (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .video-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .video-author,
+    .video-stats {
+        font-size: 14px;
+    }
+}
+@media (max-width: 1200px) {
+   .side-bar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+    transition: width 0.3s ease;
+   }
+   .side-bar-text {
+    white-space: nowrap;
+   }
+   .side-bar-item {
+    height: 74px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .side-bar-item:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+  .side-bar-icon img {
+    height: 24px;
+    margin-bottom: 4px;
+    margin-right: 10px;
+  }
+
+  .side-bar-item div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
+  }
+}
+@media (min-width: 1200.1px) {
+    .side-bar {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 55px;
+      background-color: white;
+      width: 240px;
+      z-index: 200;
+      padding-top: 13px;
+      transition: width 0.3s ease;
+    }
+    .video-grid {
+      padding-left: 170px;
+    }
+  
+    .side-bar-item {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 8px 24px;
+    }
+  
+    .side-bar-item:hover {
+      background-color: rgb(235, 235, 235);
+    }
+  
+    .side-bar-icon img {
+      height: 24px;
+      margin-right: 10px;
+    }
+  
+    .side-bar-item div {
+      font-family: Roboto, Arial;
+      font-size: 14px;
+    }
+  }
