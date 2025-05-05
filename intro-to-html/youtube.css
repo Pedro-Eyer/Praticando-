@@ -333,20 +333,43 @@ p {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 10px;
+        position: absolute;
+        top: 12px;
+        right: 0;
+
     }
 
 }
 
-@media (min-width: 502px) and (max-width: 750px) {
+@media (min-width: 502px) and (max-width: 620px) {
     .video-grid {
         grid-template-columns: 1fr 1fr;
     }
+    .search-bar {
+        display: none;
+    }
+    .right-section {
+        white-space: nowrap;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        top: 12px;
+        right: 0;
+
+    }
 }
 
-@media (min-width: 751px) and (max-width: 999px) {
+@media (min-width: 621px) and (max-width: 999px) {
     .video-grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .right-section {
+        white-space: nowrap;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
     }
 }
 
